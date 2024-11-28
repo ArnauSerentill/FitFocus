@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    padding: 0 20px;
+}
+
+/* Header Principal */
+header {
+    position: relative;
+    background: linear-gradient(90deg, #ff9800, #ffc107); /* Degradado naranja-amarillo */
+    color: white;
+    padding: 20px 20px 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .logo img {
+    width: 75px;
+    height: auto;
+}
+
+/* Navigation Banner */
+nav {
+    background: #333; /* Fondo negro */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800; /* Resalta con naranja al pasar el cursor */
+    color: black; /* Contraste */
+}
+
+/* Main Sections */
+main {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Formulario */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff9800;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Botón visual */
+button {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff9800, #ffc107);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #e68900, #ffb300);
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaciado uniforme entre íconos */
+}
+
+footer .social-icons a img {
+    width: 50px; /* Tamaño uniforme */
+    height: 50px; /* Tamaño uniforme */
+    filter: brightness(0) invert(1); /* Blanco para íconos */
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+footer .social-icons a img:hover {
+    filter: brightness(0.8) invert(1); /* Efecto hover */
+    transform: scale(1.1); /* Ligero aumento al pasar el cursor */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
